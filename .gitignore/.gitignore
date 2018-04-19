@@ -1,0 +1,215 @@
+title Pot Smasher
+author Julia and Lauren
+
+========
+OBJECTS
+========
+
+Background 
+#c4b8a2 #cec6b3
+00010
+01001
+00010
+10000
+00101
+   
+
+Wall 
+lightgrey gray
+11111
+10001
+10001
+10001
+11111
+
+
+Player 
+Green White Orange
+1000.
+1000.
+21012
+.000.
+.2.2.
+
+
+Pot
+Blue lightblue
+.000.
+.000.
+00000
+11111
+00000
+
+Fake
+lightblue blue
+.000.
+.000.
+11111
+00000
+11111
+
+Crate
+brown darkbrown
+01010
+11111
+01010
+11111
+01010
+
+
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Wall
+P = Player
+T = Pot
+Y = Fake
+C = Crate
+
+=======
+SOUNDS
+=======
+
+Crate MOVE 11838707
+sfx0 24888704
+EndLevel 1469500
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Player, Wall, Pot, Fake, Crate
+
+======
+RULES     
+======     
+
+[ >  Player | Pot ] -> [  >  Player |  ] sfx0
+[ >  Player | Crate] -> [ > Player | > Crate ]
+
+==============
+WINCONDITIONS
+==============
+
+No Pot
+
+=======     
+LEVELS
+=======
+
+##T...####T#
+T##...#.#.C.
+..##CT..#.T#
+..P..#..#.CT
+T#...#.C....
+##..###T#T##
+
+#####T##.###
+#..#...#..T#
+#..#..##C###
+#..##C.....#
+TCC.....##T#
+#P##########
+
+###t.p###.t#
+#t#....##..#
+...#c#.#.c##
+tcc..c.#...#
+#...c#.c.#t#
+#t##.#.c..##
+
+#......p....
+#.#.#.#..ccc
+#.ccccc.cc.t
+#.c.t.c.ct.c
+#.ccccc.c.c.
+#######.###.
+
+##.c##c.##..
+##..ct..##..
+##.c##.c##..
+t...##..ct.p
+##.c##.c##..
+##..ct..##..
+##.c##c.##..
+
+t.#.#.......
+.c..#t###..#
+..ccc####c.#
+#.cpc..c..c#
+..ccc..#.c..
+t#.#...c.c.t
+
+#...#t.c..#.t
+.c.p.c..#t.c.
+..#.c.#..#..#
+c..c...#..#..
+.c..#.c.c..c.
+t.#.t#...c..#
+
+#.t.#..#..c..
+.c.c...#..c.t
+..#.p..#cc###
+cc#.cccc..#.t
+..###..#..c..
+t...#.t#t.c.#
+
+#.#c.c.ct.#.t
+#.t..c.tc.c..
+#.c..#.c..#..
+#t.#.###cc###
+#c##c#.#..c..
+#.ct.#.ct.c.p
+#.tc.#.tc.#..
+
+t........#..t
+#####....#...
+.t...c.c.cccc
+.t..c.c..c.p.
+######...#...
+t..c.....####
+.c..c.......t
+
+...........t
+.##cc##c##..
+.#t.cc..t#..
+.#..c.c..ccc
+.#t..cc.t#..
+.##c######p.
+............
+
+ccc.......c.
+t..ccccccccc
+....p.c..c.t
+c.c....c....
+.cccc.ctcccc
+.c.c.c.cct..
+t..c.c..c..c
+
+##.cc.c.t..#
+#t.c..cc..c.
+..##..#..c.t
+..##t####...
+cc####t##.c.
+t......##c.#
+#..p......##
+
+#t..#.#t...#
+##..c.###..#
+t.#.#p..c..#
+..#c#.cc##.t
+#c#.#..c....
+..c.####c.##
+t.c...#....t
+
+yy.y.y.tyyyy
+ytpyy.....ty
+yy..yyccccyy
+yy..tc....yy
+yy..y..cccyy
+yyy.y..y..yy
+yyy.ty.y.tyy
